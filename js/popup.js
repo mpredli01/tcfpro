@@ -1,8 +1,4 @@
-/**
- * Created by mpredli01 on 5/19/16.
- */
-
-var windowObjectReference = null; // global variable
+let windowObjectReference = null; // global variable
 
 function openRequestedPopup(strUrl,strWindowName) {
     if(windowObjectReference == null || windowObjectReference.closed) {
@@ -10,5 +6,5 @@ function openRequestedPopup(strUrl,strWindowName) {
         }
     else {
         windowObjectReference.focus();
-        };
+        }
     }
